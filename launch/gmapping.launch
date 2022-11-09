@@ -1,3 +1,5 @@
 <launch>
-  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"/>
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <rosparam file="$(find myproject)/params/gmapping_params.yaml" command="load" />
+  </node>
 </launch>
