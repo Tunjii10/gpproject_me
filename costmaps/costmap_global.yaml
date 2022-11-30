@@ -1,6 +1,7 @@
 global_frame: map
 rolling_window: false
-
+width: 100.0
+height: 100.0
 plugins:
   - {name: static,                  type: "costmap_2d::StaticLayer"}
   - {name: inflation,               type: "costmap_2d::InflationLayer"}
